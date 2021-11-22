@@ -16,6 +16,8 @@ import (
 	"time"
 )
 
+var  READ_TIMEOUT_SECONDS = 5
+
 // ModbusServer implements server interface
 type ModbusServer struct {
 	ModbusBaseServer                    // Anonim ModbusBase implementation
@@ -117,7 +119,7 @@ func (srv *ModbusServer) handleRequest(conn net.Conn) error {
 
 	// Read the incoming connection into the buffer.
 	for {
-		conn.SetReadDeadline(time.Now().Add(5 * time.Second))
+		conn.SetReadDeadline(time.Now().Add(time.Duration(READ_TIMEOUT_SECONDS) * time.Second))
 		select {
 		case <-srv.done:
 			return nil
