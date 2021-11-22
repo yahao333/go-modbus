@@ -10,7 +10,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	. "github.com/soldatov-s/go-modbus"
+	. "github.com/yahao333/go-modbus"
 )
 
 // ModbusClient implements client interface

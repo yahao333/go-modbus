@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	. "github.com/soldatov-s/go-modbus"
+	. "github.com/yahao333/go-modbus"
 )
 
 // ModbusServer implements server interface

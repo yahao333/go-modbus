@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/soldatov-s/go-modbus"
-	"github.com/soldatov-s/go-modbus/modbusgrpc"
+	"github.com/yahao333/go-modbus"
+	"github.com/yahao333/go-modbus/modbusgrpc"
 )
 
 var (
